@@ -1,0 +1,72 @@
+Github 
+install for your local machine
+create account and repository online
+
+then configuration in local system under one project:
+
+git --version
+git config --global user.email "email"
+git config --global user.name "username"
+
+To display username and email
+git config --global user.name
+git config --global user.email
+
+To clone your folder
+go to the dir->git init (.git file get created)
+
+Changes like adding file
+git status->something untracked
+git add .| git add filenaem|git add file(tab)
+
+git commit -m "message"
+
+since we done local commit 
+
+To commit in remote repo,copy the repo link:
+
+set up origin:
+git remote add origin link
+To display origin
+git remote show origin
+
+pushing to remote
+git push -u origin master 
+
+
+Branching and merging
+branch :
+git branch branchname
+
+to enter branch 
+git checkout branchname
+
+merge branch to master after entering master branch:
+git merge branchname
+ (local)
+ (global)->git push -u origin master
+ 
+ 
+To delete branch -> git branch -d bn(local)
+				 -> git push origin --delete bn(global)
+				 
+
+Logging details:
+git log
+
+
+Creating tags:
+git tag tagname
+git tag 
+git show tag
+git push origin tagname
+git tag -d tagname(local)
+git push origin --delete tagname(global)
+git tag tagname committoken
+
+
+
+
+
+
+
