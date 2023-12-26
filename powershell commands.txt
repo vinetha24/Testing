@@ -1,0 +1,25 @@
+To create new folder
+
+New-Item -Path "" ItemType Directory
+
+To create new file 
+New-Item -Path "" ItemType File
+
+Get-content "path"
+set-content "path" "content"
+
+copy-Item "source" "destinationpath"
+Remove-item "path" (-Recurse)[to ask permisiion from user]
+Move-Item "source" "destinationpath"
+
+object creation in ps:
+$obj = [pscustomobject]@{
+item = "vnv"}
+
+where-object {$_.parameter -eq 'value'} | select-object -Property "p1"
+
+
+Date -> Get-Date
+
+dir > txtfilename
+
